@@ -8,11 +8,19 @@ namespace Mathmagician
 {
     public class Integer
     {
-        public Integer (int integerCommand)
+        public int FirstNumber()
         {
-            this.IntegerCommand = integerCommand;
+            return 1;
         }
 
-        public int IntegerCommand { get; set; }
+        public int FollowingNumber(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<int> Sequence(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
