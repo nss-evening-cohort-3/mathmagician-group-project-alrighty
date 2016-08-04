@@ -8,5 +8,11 @@ namespace Mathmagician
 {
     public class Integer
     {
+        public Integer (int integerCommand)
+        {
+            this.IntegerCommand = integerCommand;
+        }
+
+        public int IntegerCommand { get; set; }
     }
 }

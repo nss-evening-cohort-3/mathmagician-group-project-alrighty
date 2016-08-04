@@ -12,10 +12,10 @@ namespace Mathmagician.Tests
             //Arrange
 
             //Act
-            Integer my_int = new Integer(); // What I want to be able to do
+            Integer integerCommand = new Integer(); // What I want to be able to do
 
             //Assert
-            Assert.IsNotNull(my_int);
+            Assert.IsNotNull(integerCommand);
 
         }
     }
