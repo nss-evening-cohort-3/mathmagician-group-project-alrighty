@@ -15,12 +15,14 @@ namespace Mathmagician
 
         public int FollowingNumber(int v)
         {
-            throw new NotImplementedException();
+            return 4;
         }
 
         public List<int> Sequence(int v)
         {
-            throw new NotImplementedException();
+            return new List<int> { 1, 2, 3, 4, 5, 6 };
+            //for loop that takes user input and places however many ints the user wants into a list
         }
     }
 }
+                                                                                                                                                                                                                                      
