@@ -40,6 +40,7 @@ namespace Mathmagician.Tests
             int NextNumber = my_odd.FollowingNumber(3);
             //Assert
             Assert.AreEqual(5, NextNumber);
+
         }
 
         [TestMethod]
@@ -52,6 +53,7 @@ namespace Mathmagician.Tests
             List<int> ExpectedSequence = new List<int> { 1, 3, 5, 7, 9, 11 };
             //Assert
             Assert.AreEqual(ExpectedSequence.Count, NumberSequence.Count);
+            CollectionAssert.AreEqual(ExpectedSequence, NumberSequence);
         }
     }
 }
