@@ -52,6 +52,7 @@ namespace Mathmagician.Tests
             List<int> ExpectedSequence = new List<int> { 1, 1, 3, 5, 8, 13 };
             //Assert
             Assert.AreEqual(ExpectedSequence.Count, NumberSequence.Count);
+            CollectionAssert.AreEqual(NumberSequence, ExpectedSequence);
         }
     }
 }
