@@ -23,13 +23,6 @@ namespace Mathmagician
             return a;
         }
 
-        static void Main()
-        {
-            for (int i = 0; i < 15; i++)
-            {
-                Console.WriteLine(Fibonacci(i));
-            }
-        }
         public int FirstNumber()
         {
            return 1;
