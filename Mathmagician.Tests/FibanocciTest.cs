@@ -13,7 +13,7 @@ namespace Mathmagician.Tests
             //Arrange
 
             //Act
-            Fibonacci fibonacciCommand = new Fibonacci(); // What I want to be able to do
+            FibonacciNum fibonacciCommand = new FibonacciNum(); // What I want to be able to do
 
             //Assert
             Assert.IsNotNull(fibonacciCommand);
@@ -24,7 +24,7 @@ namespace Mathmagician.Tests
         public void fibonacciInitialNumberTest()
         {
             //Arrange
-            Fibonacci my_fibonacci = new Fibonacci();
+            FibonacciNum my_fibonacci = new FibonacciNum();
             //Act
             int ResultingNumber = my_fibonacci.FirstNumber();
             //Assert
@@ -35,7 +35,7 @@ namespace Mathmagician.Tests
         public void NextFibonacciNum()
         {
             //Arrange
-            Fibonacci my_fibonacci = new Fibonacci();
+            FibonacciNum my_fibonacci = new FibonacciNum();
             //Act
             int NextNumber = my_fibonacci.FollowingNumber(5);
             //Assert
@@ -46,7 +46,7 @@ namespace Mathmagician.Tests
         public void FibonacciSequenceOfNumbers()
         {
             //Arrange
-            Fibonacci my_fibonacci = new Fibonacci();
+            FibonacciNum my_fibonacci = new FibonacciNum();
             //Act
             List<int> NumberSequence = my_fibonacci.Sequence(6);
             List<int> ExpectedSequence = new List<int> { 1, 1, 3, 5, 8, 13 };
