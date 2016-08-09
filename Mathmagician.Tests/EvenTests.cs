@@ -51,6 +51,7 @@ namespace Mathmagician.Tests
             List<int> EvenExpectedSequence = new List<int> { 2, 4, 6, 8, 10, 12 };
             //Assert
             Assert.AreEqual(EvenExpectedSequence.Count, EvenNumberSequence.Count);
+            CollectionAssert.AreEqual(EvenExpectedSequence, EvenNumberSequence);
         }
     }
 }
