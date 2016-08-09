@@ -52,6 +52,7 @@ namespace Mathmagician.Tests
             List<int> PrimeExpectedSequence = new List<int> { 2, 3, 5, 7, 11, 13 };
             //Assert
             Assert.AreEqual(PrimeExpectedSequence.Count, PrimeNumberSequence.Count);
+            CollectionAssert.AreEqual(PrimeNumberSequence, PrimeExpectedSequence);
         }
     }
 }
