@@ -27,6 +27,9 @@ namespace Mathmagician
             {
                 IntOutputList.Add(i);
             }
+
+            return IntOutputList;
+
         }
     }
 }

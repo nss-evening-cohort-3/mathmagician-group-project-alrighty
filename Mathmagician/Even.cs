@@ -18,12 +18,19 @@ namespace Mathmagician
             return 4;
         }
 
-        public List<int> EvenSequence(int v)
+        public List<int> EvenSequence(int user_number)
         {
             return new List<int> { 2, 4, 6, 8, 10, 12 };
             //for loop that takes user input and places however many ints the user wants into a list
-           
+            List<int> EvenOutputList = new List<int>();
+            for (int i = 0; i <= user_number; i++)
+            {
+                int BaseNumber = 0;
+                EvenOutputList.Add(BaseNumber);
+                BaseNumber = BaseNumber + 2;
+            }
 
+            return EvenOutputList;
         }
     }
 }
