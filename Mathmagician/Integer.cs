@@ -18,10 +18,15 @@ namespace Mathmagician
             return 4;
         }
 
-        public List<int> Sequence(int v)
+        public List<int> IntegerSequence(int user_number)
         {
             return new List<int> { 1, 2, 3, 4, 5, 6 };
             //for loop that takes user input and places however many ints the user wants into a list
+            List<int> IntOutputList = new List<int>();
+            for (int i = 0; i <= user_number; i++)
+            {
+                IntOutputList.Add(i);
+            }
         }
     }
 }

@@ -22,6 +22,8 @@ namespace Mathmagician
         {
             return new List<int> { 2, 4, 6, 8, 10, 12 };
             //for loop that takes user input and places however many ints the user wants into a list
+           
+
         }
     }
 }
