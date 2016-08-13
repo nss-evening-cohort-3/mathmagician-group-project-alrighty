@@ -48,7 +48,7 @@ namespace Mathmagician.Tests
             //Arrange
             Prime my_prime = new Prime();
             //Act
-            List<int> PrimeNumberSequence = my_prime.Sequence(6);
+            List<int> PrimeNumberSequence = my_prime.PrimeSequence(6);
             List<int> PrimeExpectedSequence = new List<int> { 2, 3, 5, 7, 11, 13 };
             //Assert
             Assert.AreEqual(PrimeExpectedSequence.Count, PrimeNumberSequence.Count);

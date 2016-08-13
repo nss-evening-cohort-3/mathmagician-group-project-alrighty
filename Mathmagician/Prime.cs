@@ -18,10 +18,32 @@ namespace Mathmagician
             return 3;
         }
 
-        public List<int> Sequence(int v)
+        public static bool isPrime(int number)
+        {
+            int boundary = (int)Math.Floor(Math.Sqrt(number));
+            if (number == 1)
+                return false;
+            if (number == 2)
+                return false;
+            for (int i = 2; i <= boundary; i++)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+
+            return true;
+        }
+
+        public List<int> PrimeSequence(int user_number)
         {
             return new List<int> { 2, 3, 5, 7, 11, 13 };
+
             //for loop that takes user input and places however many ints the user wants into a list
+            List<int> PrimeOutputList = new List<int>();
+            for (int i == 2; i <= user_number; i++)
+            {
+
+            }
         }
     }
 }
