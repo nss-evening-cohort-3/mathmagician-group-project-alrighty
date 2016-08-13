@@ -48,7 +48,7 @@ namespace Mathmagician.Tests
             //Arrange
             Integer my_int = new Integer();
             //Act
-            List<int> NumberSequence = my_int.Sequence(6);
+            List<int> NumberSequence = my_int.IntegerSequence(6);
             List<int> ExpectedSequence = new List<int> {1, 2, 3, 4, 5, 6};
             //Assert
             Assert.AreEqual(ExpectedSequence.Count, NumberSequence.Count);
