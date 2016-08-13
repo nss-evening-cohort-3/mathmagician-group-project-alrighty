@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OddNum.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="OddNum.cs" />
     <Compile Include="Prime.cs" />
