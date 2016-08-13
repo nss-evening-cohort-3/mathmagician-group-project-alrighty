@@ -6,36 +6,35 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class FibonacciNum
+    public class Fibonacci
     {
-
-        public static int Fibonacci(int n)
+        public List<int> FibSequence(int user_number)
         {
+            List<int> FibOutputList = new List<int>();
             int a = 0;
             int b = 1;
-            // In N steps compute Fibonacci sequence iteratively.
-            for (int i = 0; i < n; i++)
+
+            for (int i = 0; i < user_number; i++)
             {
                 int temp = a;
                 a = b;
                 b = temp + b;
+
+                FibOutputList.Add(b);
             }
-            return a;
+            return FibOutputList;
         }
 
         public int FirstNumber()
         {
-           return 1;
+            return 0;
         }
 
         public int FollowingNumber(int v)
         {
-            return 8;
-        }
-
-        public List<int> Sequence(int v)
-        {
-           return new List<int> { 1, 1, 3, 5, 8, 13 };
+            return 1;
         }
     }
 }
+
+
