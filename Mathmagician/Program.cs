@@ -48,16 +48,16 @@ namespace Mathmagician
                     Console.WriteLine(EvenNumbers[i]);
                 }
             }
-            //else if (command == "prime")
-            //{
-            //    Prime my_prime = new Prime();
-            //    var PrimeNumbers = my_prime.PrimeSequence(user_number);
+            else if (command == "prime")
+            {
+                Prime my_prime = new Prime();
+                var PrimeNumbers = my_prime.PrimeSequence(user_number);
 
-            //    for (var i = 0; i < PrimeNumbers.Count; i++)
-            //    {
-            //        Console.WriteLine(PrimeNumbers[i]);
-            //    }
-            //}
+                for (var i = 0; i < PrimeNumbers.Count; i++)
+                {
+                    Console.WriteLine(PrimeNumbers[i]);
+                }
+            }
             else if (command == "fibonacci")
             {
                 Fibonacci my_fib = new Fibonacci();
@@ -68,7 +68,19 @@ namespace Mathmagician
                     Console.WriteLine(FibNumber[i]);
                 }
 
-            } else
+            }
+            else if (command == "integer")
+            {
+                Integer my_int = new Integer();
+                var IntNumber = my_int.IntegerSequence(user_number);
+
+                for (var i = 0; i < IntNumber.Count; i++)
+                {
+                    Console.WriteLine(IntNumber[i]);
+                }
+
+            }
+            else
             {
                 Console.WriteLine("Whoops!");
             }
